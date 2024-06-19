@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 40px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 193, 195);
+    background: radial-gradient(circle, #22c1c3 0%, #7569e3 50%, #a6abf7 100%);
+}
+
+.title {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.wrapper {
+    margin-top: 25px;
+    margin-bottom: 0%;
+    align-items: center;
+}
+
+.mensajes {
+    font-size: 18px;
+    border: 2px dotted;
+    margin-bottom: 40px;
+    padding: 25px;
+    margin: 0 350px;
+    box-sizing: border-box;
+    background-color: rgb(181, 200, 241);
+    font-family: "Rubik", sans-serif;
+}
+
+.topper {
+    height: auto;
+    width: auto;
+    padding: 0%;
+    border: 0%;
+}
+
+.subtitle {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+#username,
+#texto {
+    font-size: 15px;
+    margin: 10px;
+    border: 2px solid transparent;
+    width: 15em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+input[type="submit"] {
+    font-size: 15px;
+    padding: 12.5px 20px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #22c1c3;
+    color: #ffffff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #a6abf7;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+}
+
+input[type="submit"]:active {
+    background-color: #2ba8fb;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}

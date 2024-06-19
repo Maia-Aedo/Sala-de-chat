@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEWCHAT!</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <img src="./assets/gatitos.png" alt="" class="topper">
+    <h1 class="title">Bienvenido a MEWCHAT</h1>
+    <!-- MOSTRAR MENSAJES -->
+    <div class="wrapper">
+        <div id="messages" class="mensajes"></div>
+    </div>
+    <!-- FORMULARIO PARA ENVIAR MENSAJES -->
+    <div class="form">
+        <h2 class="subtitle">Envía tu mensaje</h2>
+        <for onsubmit="return addMessage(this)">
+            <!-- form sin action para que no se recargue la pagina, por eso usa evento addMessage
+            de la aplicacion cliente -->
+            <div class="campos">
+                <input type="text" id="username" placeholder="Tu nombre">
+                <input type="text" id="texto" placeholder="Escribe algo">
+            </div>
+            <!-- nombre de autor -->
+            <input type="submit" value="Enviar">
+            </form>
+    </div>
+
+</body>
+
+</html>
